@@ -1,0 +1,54 @@
+body {
+    background-image: url('/CRUDUsers/resources/static/img/back.jpg');
+    background-size: cover;
+    background-color: white;
+}
+.navbar {
+    background-color: #343a40;
+    display: flex;
+    justify-content: center;
+}
+.navbar-brand img {
+    height: 80px;
+}
+.sidebar {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    background-color: #343a40;
+    padding-top: 20px;
+}
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+}
+.sidebar a:hover {
+    background-color: #575d63;
+}
+.content {
+    margin-left: 220px;
+    padding: 20px;
+}
+table.dataTable thead {
+    background-color: #E11F33;
+    color: white;
+}
+input[type="text"], input[type="password"],
+input[type="date"], input[type="number"], 
+input[type="email"],select, select option {
+    background-color : #586B7C;
+}
+
+select {
+    background: #586B7C;
+    color: #fff;
+}
+
+option:not(:checked) {
+    background-color: #000;
+}
