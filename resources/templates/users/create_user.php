@@ -49,8 +49,8 @@
             </nav>
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
                 <div class="container">
-                    <div class="row">
-                        <div class="col">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
                             <?php            
                             session_start();
                             if (isset($_SESSION['message'])): ?>
@@ -62,10 +62,6 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                                 </div>
                             <?php endif; ?>
-                        </div>
-                    </div>  
-                    <div class="row justify-content-center">
-                        <div class="col-md-6">
                             <h2 class="text-center mt-5">Crear Nuevo Usuario</h2>
                             <?php
                             session_start();
@@ -119,7 +115,9 @@
                                     <label for="salary" class="form-label">Salario</label>
                                     <input type="number" class="form-control" id="salary" name="salary" required>
                                 </div>
-                                <button type="submit" class="btn btn-primary w-100">Crear Usuario</button>
+                                <div style="text-align:center;">
+                                    <button type="submit" class="btn btn-danger">Crear Usuario</button>
+                                </div>
                             </form>
                         </div>
                     </div>

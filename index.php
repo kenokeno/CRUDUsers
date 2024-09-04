@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/2.1.5/css/dataTables.bootstrap5.css">
     <link rel="stylesheet" href="./resources/static/css/styles.css">
-    
+
 </head>
 <body onload="load()">
     <div class="container-fluid">
@@ -47,21 +47,17 @@
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
                 <div class="container">
                     <div class="row">
-                        <div class="col">
-                            <?php            
-                            session_start();
-                            if (isset($_SESSION['message'])): ?>
-                                <div class="alert alert-success alert-dismissible fade show" role="alert">
-                                    <?php
-                                    echo $_SESSION['message'];
-                                    unset($_SESSION['message']); // Eliminar el mensaje de error después de mostrarlo
-                                    ?>
-                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                                </div>
-                            <?php endif; ?>
-                        </div>
-                    </div>
-                    <div class="row">
+                        <?php            
+                        session_start();
+                        if (isset($_SESSION['message'])): ?>
+                            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <?php
+                                echo $_SESSION['message'];
+                                unset($_SESSION['message']); // Eliminar el mensaje de error después de mostrarlo
+                                ?>
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                        <?php endif; ?>
                         <div class="col-9 offset-3">
                             <h1>Lista de Usuarios</h1>
                         </div>
